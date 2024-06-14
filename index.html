@@ -60,7 +60,7 @@
     </div>
   </section>
   <!-- statistics section -->
-  <section class="statistics">
+  <section id="statistics" class="statistics">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
@@ -68,9 +68,32 @@
         <div class="col-md-6">
             <h2 class="text-center">Statistics</h2>
             <canvas class="skill-chart" id="statsChart"></canvas>
-        </div>
-        <div class="col-md-3">
-
+            <script>
+              const ctx = document.getElementById('statsChart');
+              const skillChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: ['Java', 'HTML', 'CSS', 'Javascript', 'Bootstrap'],
+                  datasets: [{
+                    label: 'Skills',
+                    data: [65, 85, 80, 60, 70],
+                    backgroundColor: 'rgba(15, 255, 80))',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  scales: {
+                    r: {
+                      beginAtZero: true,
+                      max: 100
+                    }
+                  }
+                }
+              });
+          
+          
+            </script>
         </div>
       </div>
     </div>
@@ -78,29 +101,7 @@
 
   <footer>
   </footer>
-  <script>
-    const ctx = document.getElementById('statsChart');
-    const skillChart = new Chart(ctx, {
-      type: 'bar', // You can change this to 'bar' if you prefer a bar chart
-      data: {
-        labels: ['Python', 'Java', 'HTML/CSS', 'JavaScript', 'SQL', 'Project Management'],
-        datasets: [{
-          label: 'Skills',
-          data: [90, 75, 85, 70, 80, 60],
-          backgroundColor: 'rgba(54, 162, 235, 0.2)',
-          borderColor: 'rgba(54, 162, 235, 1)',
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          r: {
-            beginAtZero: true,
-            max: 100
-          }
-        }
-      }
-    });
+
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
