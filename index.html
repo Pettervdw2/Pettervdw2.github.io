@@ -49,9 +49,9 @@
         <div class="col-md-4">
         </div>
         <div class="col-md-4 text-center w-100">
-          <h1 class="h1">Welkom </h1>
+          <h1 class="h1  animation: animation1 20s ease 0s infinite normal none;">Welkom </h1>
           <h5 class="h5 text-white">Dit Is Mijn Persoonlijke Portfolio</h5>
-          <a href="#statistics" class="btn">Mijn Statistics</a>
+          <a href="#statistics" class="btn mt-3" style="color: rgb(0, 0, 110); font-weight: bolder; border-color: white; background-color: white;">Mijn Statistics</a>
         </div>
         <div class="col-md-4">
 
@@ -66,34 +66,34 @@
         <div class="col-md-3">
         </div>
         <div class="col-md-6">
-            <h2 class="h1 text-center">Statistics</h2>
-            <canvas class="skill-chart" id="statsChart"></canvas>
-            <script>
-              const ctx = document.getElementById('statsChart');
-              const skillChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                  labels: ['Java', 'HTML', 'CSS', 'Javascript', 'Bootstrap'],
-                  datasets: [{
-                    label: 'Skills',
-                    data: [65, 85, 80, 60, 70],
-                    backgroundColor: 'rgba(15, 255, 80))',
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    borderWidth: 1
-                  }]
-                },
-                options: {
-                  scales: {
-                    r: {
-                      beginAtZero: true,
-                      max: 100
-                    }
+          <h2 class="h1 text-center">Statistics</h2>
+          <canvas class="skill-chart" id="statsChart"></canvas>
+          <script>
+            const ctx = document.getElementById('statsChart');
+            const skillChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['Java', 'HTML', 'CSS', 'Javascript', 'Bootstrap'],
+                datasets: [{
+                  label: 'Skills',
+                  data: [65, 85, 80, 60, 70],
+                  backgroundColor: 'rgba(15, 255, 80))',
+                  borderColor: 'rgba(54, 162, 235, 1)',
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  r: {
+                    beginAtZero: true,
+                    max: 100
                   }
                 }
-              });
-          
-          
-            </script>
+              }
+            });
+
+
+          </script>
         </div>
       </div>
     </div>
@@ -103,17 +103,90 @@
       <div class="row">
         <div class="col-md-4">
         </div>
-        <div class="col-md-4 w-100">
+        <div class="col-md-4 w-100 ">
+          <div class="w-100 mt-5" style="height: 5px; background-color: #2727ca; margin-bottom: 20px; opacity: 60%;"></div>
           <h1 class="h1 text-center mt-5">Over Mij </h1>
-          <h5 class="h5 justify-content-">Dit Is Mijn Persoonlijke Portfolio</h5>
-          <a href="#statistics" class="btn">Neem Contact Op</a>
+          <h5 class="h5 mt-5 text-left" style="width: 50%;">Hoi, ik ben Petter, een eerstejaars student software development. Hier deel ik
+            mijn ervaringen en projecten in de wereld van coderen. Kijk rond en leer over mijn ontwikkelingen als
+            softwaredeveloper.</h5>
+            <a href="#statistics" class="btn mt-3" style="color: rgb(0, 0, 110); font-weight: bolder; border-color: white; background-color: white;">Neem Contact Op</a>
         </div>
         <div class="col-md-4">
 
         </div>
       </div>
     </div>
+
   </section>
+  <section class="container-fluid projecten"s>
+    <div class="container-md">
+        <div class="d-flex justify-content-center row mt-5">
+            <h1 class="fs-3 fw-bold d-flex justify-content-center mt-5">Projecten</h1>
+            <div class="stripe my-3"></div>
+            <p class="text-center">Bekijk hier de projecten waar ik aan heb gewerkt. Van eerste project tot
+              laatste project. Elk project laat zien hoe ik met plezier werk en
+              klanten blij maak. Klik op de projecten om er meer over te weten te
+              komen.
+            </p>
+        </div>
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mt-5">
+                <div class="card text-center" style="width: 23rem; height: 17rem;">
+                  <i class="bi bi-globe2 mt-3 text-primary fs-2"></i>
+                  <img src="img/hl.png" alt="Image 1" class="img-fluid w-100 h-75" style="object-fit: cover;">
+                  <div class="card-body">
+                    <p class="card-text h2">Hoger Lager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-5">
+                <div class="card text-center" style="width: 23rem; height: 17rem;">
+                  <i class="bi bi-globe2 mt-3 text-primary fs-2"></i>
+                  <img src="img/zeeslag.jpg" alt="Image 2" class="img-fluid w-100 h-75" style="object-fit: cover;">
+                  <div class="card-body">
+                    <p class="card-text h2">Zeeslag</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-4 mt-5">
+              <div class="card text-center" style="width: 23rem; height: 17rem;">
+                <i class="bi bi-globe2 mt-5 text-primary fs-2"></i>
+                <img class="img-fluid mb-4" src="img/logo.avif" alt="">
+                <div class="card-body">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mt-5">
+              <div class="card text-center" style="width: 23rem; height: 17rem;">
+                <i class="bi bi-globe2 mt-5 text-primary fs-2"></i>
+                <img class="img-fluid mb-4" src="img/logo.avif" alt="">
+                <div class="card-body">
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 mt-5">
+              <div class="card text-center" style="width: 23rem; height: 17rem;">
+                <i class="bi bi-globe2 mt-5 text-primary fs-2"></i>
+                <img class="img-fluid mb-4" src="img/logo.avif" alt="">
+                <div class="card-body">
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 mt-5 mb-5">
+              <div class="card text-center" style="width: 23rem; height: 17rem;">
+                <i class="bi bi-globe2 mt-5 text-primary fs-2"></i>
+                <img class="img-fluid mb-4" src="img/logo.avif" alt="">
+                <div class="card-body">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
