@@ -1,4 +1,7 @@
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 .navbar {
     border-bottom: 4px solid white;
 }
